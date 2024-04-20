@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="contaier">
+        <div class="header">
+            <h2> SKY-WATCH <i class="fa-solid fa-cloud"></i></h2>
+            <div class="search-box">
+
+                <input type="text" placeholder="Enter city" class="input-box">
+                <button> <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i></button>
+            </div>
+        </div>
+
+        <div class="location-notfound">
+            <h1> Sorry, Location Not Found !!! </h1>
+            <img src="OIP__2_-removebg-preview.png" alt="404 error">
+        </div>
+        
+        <div class="weather-body">
+            <img src="download-removebg-preview.png" alt="weather img" class="weather-img">
+
+           
+
+            <div class="weeather-box">
+                <p class="temp">0 <sup>°C</sup></p>
+                <p class="description"> Ligth Rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity"> 45%</span>
+                        <p> Humidity </p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>    
+                    <div class="text">
+                        <span id="wind-speed"> 412km/h </span>
+                        <p> Windspeed </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"> </script>
+
+</html>
